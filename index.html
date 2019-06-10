@@ -7,6 +7,30 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="//cdn.ons.gov.uk/sixteens/117dfb4/css/main.css">
     <!-- <link href="https://cdn.ons.gov.uk/sixteens/658deeb/css/work-in-progress.css" rel="stylesheet" type="text/css"> -->
+    <style>
+        iframe {
+            width: 1000px;
+            height: 700px;
+            position: absolute;
+            border: black
+        }
+
+        #intro {
+            position: relative;
+            width: 1000px;
+            height: 700px;
+            border: black;
+            border: 100px solid rgba(0, 0, 0, 0.5);
+            background-clip: padding-box;
+        }
+
+        #test {
+            position: relative;
+            width: 1000px;
+            height: 700px;
+            border: black
+        }
+    </style>
 </head>
 
 <body class="pl-home">
@@ -33,7 +57,6 @@
                     <ul class="secondary-nav__list js-nav-clone__list">
                         <li class="secondary-nav__item"><strong>Rob Chambers</strong>
                         </li>
-
                     </ul>
                 </div>
             </div>
@@ -53,61 +76,105 @@
         </div>
     </div>
     <div class="wrapper">
-        <p class="page-intro__content page-intro__content--home-big margin-bottom-md--0">This roadmap sets out how we are working towards
+        <p class="page-intro__content page-intro__content--home-big margin-bottom-md--0">This roadmap sets out how we
+            are working towards
             the above vision and ensuring the website can deliver the outputs from the next census on one website.</p>
-        <h2 class = "margin-top-md--3">Roadmap principles</h2>
+        <h2 class="margin-top-md--3">How we create the roadmap</h2>
         <ul>
-            <li class = "margin-top-md--0 margin-bottom-md--0 padding-bottom-md--0">Ensure census outputs available as part of ONS website</li>
-            <li class = "margin-top-md--0 margin-bottom-md--0 padding-bottom-md--0">Deliver value quicker</li>
-            <li class = "margin-top-md--0 margin-bottom-md--0 padding-bottom-md--0">Consider effort vs value/benefit</li>
-            <li class = "margin-top-md--0 margin-bottom-md--0 padding-bottom-md--0">Aim for the shortest life cycle, with fewer handoffs</li>
-            <li class = "margin-top-md--0 margin-bottom-md--0 padding-bottom-md--0">Multidisciplinary teams</li>
-            <li class = "margin-top-md--0 margin-bottom-md--0 padding-bottom-md--0">Make tech debt a conscious choice</li>
-            <li class = "margin-top-md--0 margin-bottom-md--0 padding-bottom-md--0">Fix big stuff, not just small things</li>
-            <li class = "margin-top-md--0 margin-bottom-md--0 padding-bottom-md--0">Make room for smaller changes</li>
+            <li class="margin-top-md--0 margin-bottom-md--0 padding-bottom-md--0">Ensure census outputs available as
+                part of ONS website</li>
+            <li class="margin-top-md--0 margin-bottom-md--0 padding-bottom-md--0">Deliver value quicker</li>
+            <li class="margin-top-md--0 margin-bottom-md--0 padding-bottom-md--0">Consider effort vs value/benefit</li>
+            <li class="margin-top-md--0 margin-bottom-md--0 padding-bottom-md--0">Aim for the shortest life cycle, with
+                fewer handoffs</li>
+            <li class="margin-top-md--0 margin-bottom-md--0 padding-bottom-md--0">Multidisciplinary teams</li>
+            <li class="margin-top-md--0 margin-bottom-md--0 padding-bottom-md--0">Make tech debt a conscious choice</li>
+            <li class="margin-top-md--0 margin-bottom-md--0 padding-bottom-md--0">Fix big stuff, not just small things
+            </li>
+            <li class="margin-top-md--0 margin-bottom-md--0 padding-bottom-md--0">Make room for smaller changes</li>
         </ul>
         <h2>Roadmap</h2>
-        <div class="col-wrap padding-top-md--4 padding-bottom--3">
-            <iframe src="https://app.productplan.com/p/qI2b5TEsbKlGai-Z3T0rJx3soWeU8dqw" height="700"
-                width="100%" frameborder="0" name="Roadmap"></iframe>
+        <div id="test" class="col-wrap padding-top-md--4 padding-bottom--3">
+            <iframe src="https://app.productplan.com/p/qI2b5TEsbKlGai-Z3T0rJx3soWeU8dqw"
+                name="Roadmap"></iframe>
+            <div id="intro" class="page-neutral-intro background--gallery">
+                <div class="wrapper">
+                    <div class="col-wrap">
+                        <div class="col">
+
+                            <div class="col col--md-47 col--lg-48 padding-top--2 padding-left--1 padding-right--1 padding-bottom--2">
+                                <h1 class="page-intro__title ">
+                                    Notes on this version of the roadmap
+                                </h1>
+                                <p class="page-intro__content">
+                                    <ul>
+                                        <li>
+                                            We need more people
+                                        </li>
+                                        <li>
+                                            Size not estimated yet
+                                        </li>
+                                    </ul>
+                                </p>
+                                <button class="btn btn--primary-alternative btn--bold btn--large"
+                                    onclick="showRoadmap()"> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
-        <h2>How we work</h2>
+    </div>
+    <div class="wrapper">
+        <h2>How we work to deliver the roadmap</h2>
         <ul>
             <ol>
-                <li class = "margin-top-md--0 margin-bottom-md--0"><strong>User focused</strong> - build based on user research. We will work with user stories and
+                <li class="margin-top-md--0 margin-bottom-md--0"><strong>User focused</strong> - build based on user
+                    research. We will work with user stories and
                     will test at every step possible with <em>real</em> users. We will not ignore our internal users
                     though - the Publishing team will have as much influence on the design of our publishing tools as
-                    external users do on the front-end and API.</li>
-                <li class = "margin-top-md--0 margin-bottom-md--0"><strong>Data Driven</strong> - not just using data to support the decisions we make
-                    regarding the site but also making the site itself 'data driven'. We need to build from the API. This is our route to making things better.</li>
-                <li class = "margin-top-md--0 margin-bottom-md--0"><strong>Google is our homepage</strong> - provide an IA that works for users who enter the site from
-                    search queries and add technical SEO features to support this (Persistent, hackable URIs. Schema.org.)
+                    external users do on the front-end and API. User research trumps opinions.</li>
+                <li class="margin-top-md--0 margin-bottom-md--0"><strong>Data Driven</strong> - not just using data to
+                    support the decisions we make
+                    regarding the site but also making the site itself 'data driven'. We need to build from sustainable API's upwards.
+                    This is
+                    our route to making things better.</li>
+                <li class="margin-top-md--0 margin-bottom-md--0"><strong>Google is our homepage</strong> - provide an IA
+                    that works for users who enter the site from
+                    search queries and add technical SEO features to support this (Persistent, hackable URIs.
+                    Schema.org.)
                 </li>
-                <li class = "margin-top-md--0 margin-bottom-md--0"><strong>Do not reinvent the wheel</strong> - wherever possible we will use open source tools and
-                    technologies and build on top of the great work that already exists. We will avoid the trap of 'not invented here' and we will accept that sometimes good enough is good
+                <li class="margin-top-md--0 margin-bottom-md--0"><strong>Do not reinvent the wheel</strong> - wherever
+                    possible we will use open source tools and
+                    technologies and build on top of the great work that already exists. We will avoid the trap of 'not
+                    invented here' and we will accept that sometimes good enough is good
                     enough.</li>
-                <li class = "margin-top-md--0 margin-bottom-md--0"><strong>Build for sustainability</strong> - when we select these open source technologies and tools
+                <li class="margin-top-md--0 margin-bottom-md--0"><strong>Build for sustainability</strong> - when we
+                    select
+                    these open source technologies and tools
                     we need to consider existing communities, support and the ability to recruit people with the
                     required skills as well as the ability to train staff in that knowledge.</li>
-                <li class = "margin-top-md--0 margin-bottom-md--0"><strong>Accessibility not an afterthought</strong> - we won't fall in to the trap of being forced to
+                <li class="margin-top-md--0 margin-bottom-md--0"><strong>Accessibility not an afterthought</strong> - we
+                    won't fall in to the trap of being forced to
                     retrofit good accessibility practices in later. We will start with it as a core requirement. </li>
-                <li class = "margin-top-md--0 margin-bottom-md--0"><strong>agile <em>not</em> AGILE</strong> - we won't get hung up on Scrum vs Kanban vs DSDM. We will
+                <li class="margin-top-md--0 margin-bottom-md--0"><strong>agile <em>not</em> AGILE</strong> - we won't
+                    get
+                    hung up on Scrum vs Kanban vs DSDM. We will
                     work with the principles of the Agile Manifesto front and centre in our approach but we will, as a
                     team, decide on an approach that works for us.</li>
-                <li class = "margin-top-md--0 margin-bottom-md--0"><strong>Machines have needs too</strong> - the API is important here but whatever we do we must make
+                <li class="margin-top-md--0 margin-bottom-md--0"><strong>Machines have needs too</strong> - the API is
+                    important here but whatever we do we must make
                     it simple and straightforward to access 'machine readable data' from the site. Persistent URIs and
                     using open standards for statistical releases.</li>
-                <li class = "margin-top-md--0 margin-bottom-md--0"><strong>WWGDSD</strong> * - above all else we will follow the <a
-                        href="https://www.gov.uk/service-manual"> GDS Manual</a> and work towards the requirements of
+                <li class="margin-top-md--0 margin-bottom-md--0"><strong>WWGDSD</strong> * - above all else we will
+                    follow
+                    the <a href="https://www.gov.uk/service-manual"> GDS Manual</a> and work towards the requirements of
                     the <a href="https://www.gov.uk/service-manual/digital-by-default">Service Standard</a>.</li>
             </ol>
-            <ul>
-
-                <em>* - what would GDS do</em>
-
+            <em>* - what would GDS do</em>
     </div>
-
-
     <footer class="print--hide padding-top--13">
         <div class="wrapper link-adjust">
             <div class="improve-this-page" data-module="improve-this-page">
@@ -116,7 +183,6 @@
                         Found problems? or got any suggestions, comments? Contact us here.
                     </a>
                 </div>
-
             </div>
         </div>
         <h2 class="visuallyhidden">Footer links</h2>
@@ -124,18 +190,17 @@
             <div class="wrapper">
                 <nav>
                     <div class="footer-nav col-wrap">
-
-
                     </div>
                 </nav>
             </div>
-
         </div>
         </div>
 </body>
 
-
-</html>
-
+<script>
+    function showRoadmap() {
+        document.getElementById("intro").style.display = "none"
+    }
+</script>
 
 </html>
